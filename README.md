@@ -19,7 +19,7 @@ Most product source is private — it's commercial. Everything below is **open, 
 ## Multi-agent & MCP
 
 **🧾 deputy-mcp — open-source MCP server for Deputy (workforce management)**
-Self-hosted alternative to the hosted Deputy connectors: your token stays on your machine. Three auth modes (API token, OAuth 2.0 with loopback flow, iCal fallback), self-service `/my/*` endpoints so a plain employee token works — no manager permissions needed — and graceful degradation when access is denied. Python + FastMCP, 360+ tests, writes locked behind an opt-in flag.
+Self-hosted alternative to the hosted Deputy connectors: your token stays on your machine. Three auth modes (API token, OAuth 2.0 with loopback flow, iCal fallback), self-service `/my/*` endpoints so a plain employee token works — no manager permissions needed — and graceful degradation when access is denied. Python + FastMCP, tested end to end against a mocked Deputy API, writes locked behind an opt-in flag.
 → [Repo](https://github.com/augbastos/deputy-mcp)
 
 **⚖️ council — a deliberation engine that distrusts its own consensus**
@@ -30,7 +30,7 @@ An agent-orchestrated pipeline that turns a public-domain source text into a typ
 → [Repo](https://github.com/augbastos/etica)
 
 **📡 Wavr — explainable multi-modal sensor fusion, privacy-first**
-Fuses network scan, WiFi CSI, camera pose, and mmWave radar into one *explainable* room-occupancy state — `confidence = agreement × strength`, and the dashboard always shows *why*. Ships its own MCP server, so an LLM agent can ask the house what's happening. Loopback-only, camera frames never stored. Python 3.11 + FastAPI, 1,300+ tests green in CI, AGPL-3.0. Runs with no hardware — off-localhost the frontend self-switches to a simulator.
+Fuses network scan, WiFi CSI, camera pose, and mmWave radar into one *explainable* room-occupancy state — `confidence = agreement × strength`, and the dashboard always shows *why*. Ships its own MCP server, so an LLM agent can ask the house what's happening. Loopback-only, camera frames never stored. Python 3.11 + FastAPI, CI green with every hardware path mock-tested, AGPL-3.0. Runs with no hardware — off-localhost the frontend self-switches to a simulator.
 → [Repo](https://github.com/augbastos/wavr)
 
 ---
