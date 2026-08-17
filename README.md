@@ -29,8 +29,12 @@ Five lenses propose independently, debate, then the pipeline *computes* converge
 An agent-orchestrated pipeline that turns a public-domain source text into a typeset book — print PDF, EPUB3/Kindle, generative cover art, multi-language — with quality gates that block a stage when the previous one fails. Pipeline + a Part I sample are public; the full adapted prose is a separate paid edition.
 → [Repo](https://github.com/augbastos/etica)
 
+**🔏 SCPE — verifiable provenance for what an agent produced**
+When a pull request arrives from someone you don't know — a person, or increasingly an AI agent — trust rests on a username and reading the diff by eye. SCPE adds a signed envelope proving **who** produced a contribution and that **nothing was tampered with**, verified offline with no protocol server and no new accounts, using signing keys the contributor's git host already publishes. I wrote the spec and **three independent verifiers** — Python, Go and Rust — that must reach the same verdict across 18 normative test vectors. Ships as a GitHub Action that seals or gates pull requests. Apache-2.0, on PyPI.
+→ [Site](https://augbastos.github.io/scpe/) · [Repo](https://github.com/augbastos/scpe) · [PyPI](https://pypi.org/project/scpe-protocol/)
+
 **📡 Wavr — explainable multi-modal sensor fusion, privacy-first**
-Fuses network scan, WiFi CSI, camera pose, and mmWave radar into one *explainable* room-occupancy state — `confidence = agreement × strength`, and the dashboard always shows *why*. Ships its own MCP server, so an LLM agent can ask the house what's happening. Loopback-only, camera frames never stored. Python 3.11 + FastAPI, CI green with every hardware path mock-tested, AGPL-3.0. Runs with no hardware — off-localhost the frontend self-switches to a simulator.
+Fuses network scan, WiFi CSI, camera pose, and mmWave radar into one *explainable* room-occupancy state — `confidence = strength` (trust weight × the source's own confidence × freshness decay), and the dashboard always shows *why*. Ships its own MCP server, so an LLM agent can ask the house what's happening. Loopback-only, camera frames never stored. Python 3.11 + FastAPI, CI green with every hardware path mock-tested, AGPL-3.0. Runs with no hardware — off-localhost the frontend self-switches to a simulator.
 → [Repo](https://github.com/augbastos/wavr)
 
 ---
@@ -39,11 +43,11 @@ Fuses network scan, WiFi CSI, camera pose, and mmWave radar into one *explainabl
 
 **🐱 Lucky Cat — multi-tenant restaurant SaaS**
 Two full apps on one backend: **Ownly** (owner dashboard — shifts, payroll, stock, cash-up, live orders board) and **Tillr** (customer ordering PWA with real-time tracking). Postgres **Row-Level Security** as the isolation boundary, **Stripe Connect** wired for split payments, Cloudflare edge. Built end to end in under two months, solo; demo-complete and awaiting its first commercial rollout.
-→ [Case study](https://github.com/augbastos/lucky-cat-case-study) · [Ownly demo](https://lucky-cat.pages.dev/template/ownly/) · [Tillr demo](https://lucky-cat.pages.dev/template/tillr/)
+→ [Case study](https://github.com/augbastos/lucky-cat-case-study) · [Ownly demo](https://luckycat.ie/demo/ownly) · [Tillr demo](https://luckycat.ie/demo/tillr)
 
 **🛩️ PitchPilot — field-sales companion with a RAG copilot**
 A white-label app for door-to-door reps. Its core is **Wingman**, a retrieval-augmented copilot (Supabase **pgvector** + **Gemini**) that answers a rep's question from the product's own playbook — grounded and cited. The case study is the honest version: an IVFFlat recall collapse on a tiny corpus, a thinking-token budget eating the output, and a cost-ordered model fallback under quota — what actually broke and how I fixed it.
-→ [Case study](https://github.com/augbastos/pitchpilot-case-study) · [Live demo](https://lucky-cat.pages.dev/pitcher-template/)
+→ [Case study](https://github.com/augbastos/pitchpilot-case-study) · [Live demo](https://luckycat.ie/pitcher-template/)
 
 **🔎 rag-demo — the retrieval pipeline, runnable**
 A minimal, clone-and-run RAG pipeline: chunk → embed → **pgvector** → grounded answer that refuses to invent. `docker compose up`, a local `sentence-transformers` model for keyless indexing, pytest, and a `match_chunks()` SQL function shaped like a Supabase RPC. The inspectable code behind my copilots.
@@ -76,4 +80,5 @@ Open to freelance and AI-engineering roles — multi-agent systems, MCP servers,
 
 - 🌐 Portfolio & CV — [augustobastos.pages.dev](https://augustobastos.pages.dev)
 - 💼 LinkedIn — [linkedin.com/in/augustobastos](https://www.linkedin.com/in/augustobastos)
+- 🟢 Upwork — [freelance profile](https://www.upwork.com/freelancers/~01ac65dd1eed26dbc4)
 - ✉️ Email — [augustobastos123@gmail.com](mailto:augustobastos123@gmail.com)
