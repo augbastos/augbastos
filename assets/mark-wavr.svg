@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-label="Wavr">
+  <!-- Full-bleed dark background so the icon works as `maskable` (any crop shape). -->
+  <rect width="512" height="512" fill="#0f1216"/>
+  <!-- Radar rings + a centred pulse waveform in Wavr's accent green (#3db54a).
+       All artwork sits inside the maskable safe zone (central 80%). -->
+  <g fill="none" stroke="#3db54a" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="256" cy="256" r="156" stroke-opacity=".16" stroke-width="12"/>
+    <circle cx="256" cy="256" r="108" stroke-opacity=".28" stroke-width="12"/>
+    <path stroke-width="28" d="M104 256h48l28-84 40 168 44-140 30 96h114"/>
+  </g>
+</svg>
