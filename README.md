@@ -35,6 +35,11 @@ Fuses network scan, WiFi CSI, camera pose and mmWave radar into one *explainable
 
 Ships its own MCP server, so an LLM agent can ask the house what's happening. Loopback-only by default, camera frames never stored, and every sensor path mock-tested — camera, mmWave, WiFi CSI, BLE, and the whole network-discovery stack. Runs with no hardware at all: off-localhost the frontend self-switches to a simulator.
 
+<p align="center">
+  <img src="assets/wavr-dashboard.png" width="820" alt="Wavr dashboard: a 3D house map with per-room occupancy rings, each room broken down by sensor with its own confidence and a Why? toggle" />
+</p>
+<p align="center"><sub>Each room states a confidence and, under <em>Why?</em>, which sensor produced it — a room with no sensor says so instead of guessing.</sub></p>
+
 `Python 3.11 · FastAPI · AGPL-3.0` → [Repo](https://github.com/augbastos/wavr)
 
 ### 🧾 deputy-mcp — self-hosted MCP server for Deputy (workforce management)
@@ -50,6 +55,15 @@ Tested end to end against a mocked Deputy API; writes stay locked behind an opt-
 Four lenses on a question, five on a repo (Architect, QA, Security, Docs-DX, Maintainer), propose independently and debate; then the pipeline *computes* convergence — which claims multiple lenses reached alone — adversarially attacks the top claims with dedicated refuters, and only lets a neutral chair synthesize from what survived.
 
 Runs against any repo or question, heterogeneous models per lens, and a deterministic mock backend runs the full pipeline offline. Source private for now — happy to walk through it.
+
+```mermaid
+flowchart LR
+    IN(["A question,<br/>or a repo"]) --> L1["Architect"] & L2["QA"] & L3["Security"] & L4["Docs-DX"] & L5["Maintainer"]
+    L1 & L2 & L3 & L4 & L5 --> CONV["Debate, then convergence<br/><b>computed</b>, not asserted:<br/>how many lenses reached<br/>this claim alone"]
+    CONV --> REF["Dedicated refuters<br/>attack the top claims"]
+    REF -->|survived| CHAIR["A neutral chair<br/>synthesizes what is left"]
+    REF -.->|refuted| DROP(["dropped"])
+```
 
 ### 🏛️ etica — a book production pipeline in code
 
@@ -69,6 +83,11 @@ Two full apps on one backend: **Ownly** (owner dashboard — shifts, payroll, st
 
 First end-to-end version built solo in under two months (June–July 2026); still under active development. Two demo tenants run on the same schema a real store would get, and the card rail is proven end to end in Stripe live mode — infrastructure proven, not a customer: no restaurant has run on it.
 
+| | |
+|:--:|:--:|
+| ![Ownly — the owner dashboard: forecast, orders, revenue, labour cost and prep list for the day](assets/lucky-cat-ownly.jpg) | ![Tillr — the customer ordering PWA: menu categories, dish cards with photos and prices, repeat-last-order banner](assets/lucky-cat-tillr.jpg) |
+| **Ownly** — what the owner runs the day on | **Tillr** — what the customer orders from |
+
 → [Case study](https://github.com/augbastos/lucky-cat-case-study) · [Ownly demo](https://luckycat.ie/demo/ownly) · [Tillr demo](https://luckycat.ie/demo/tillr)
 
 ### 🛩️ PitchPilot — field-sales companion with a RAG copilot
@@ -76,6 +95,11 @@ First end-to-end version built solo in under two months (June–July 2026); stil
 A white-label app for door-to-door reps. Its core is **Wingman**, a retrieval-augmented copilot (Supabase **pgvector** + **Gemini**) that answers a rep's question from the product's own playbook — grounded and cited.
 
 The case study is the honest version: an IVFFlat recall collapse on a tiny corpus, a thinking-token budget eating the output, and a cost-ordered model fallback under quota. What actually broke, and how I fixed it.
+
+<p align="center">
+  <img src="assets/pitchpilot-wingman.png" width="320" alt="Wingman answering 'How do I handle a price objection?' with a grounded reply drawn from the playbook, plus follow-up chips" />
+</p>
+<p align="center"><sub>A rep asks in their own words; the answer comes from the playbook, not the model's memory.</sub></p>
 
 → [Case study](https://github.com/augbastos/pitchpilot-case-study) · [Live demo](https://luckycat.ie/pitcher-template/)
 
