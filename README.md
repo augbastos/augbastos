@@ -19,7 +19,7 @@ Most product source is private — it's commercial. Everything below is **open, 
 
 ## Selected work
 
-### 🔏 SCPE — verifiable provenance for what an agent produced
+### <img src="assets/mark-scpe.svg" height="20" alt=""> SCPE — verifiable provenance for what an agent produced
 
 When a pull request arrives from someone you don't know — a person, or increasingly an AI agent — trust rests on a username and reading the diff by eye. SCPE adds a signed envelope proving **who** produced a contribution and that **nothing was tampered with**, verified offline with no protocol server and no new accounts, using signing keys the contributor's git host already publishes.
 
@@ -29,7 +29,7 @@ I wrote the spec and **three independent verifiers — Python, Go and Rust — h
 
 `Apache-2.0` → [Site](https://augbastos.github.io/scpe/) · [Repo](https://github.com/augbastos/scpe) · [PyPI](https://pypi.org/project/scpe-protocol/)
 
-### 📡 Wavr — explainable multi-modal sensor fusion, privacy-first
+### <img src="assets/mark-wavr.svg" height="20" alt=""> Wavr — explainable multi-modal sensor fusion, privacy-first
 
 Fuses network scan, WiFi CSI, camera pose and mmWave radar into one *explainable* room-occupancy state: `confidence = strength` (trust weight × the source's own confidence × freshness decay), and the dashboard always shows **why** it believes what it believes.
 
@@ -51,16 +51,7 @@ Four lenses on a question, five on a repo (Architect, QA, Security, Docs-DX, Mai
 
 Runs against any repo or question, heterogeneous models per lens, and a deterministic mock backend runs the full pipeline offline. Source private for now — happy to walk through it.
 
-```mermaid
-flowchart LR
-    IN(["A question,<br/>or a repo"]) --> L1["Architect"] & L2["QA"] & L3["Security"] & L4["Docs-DX"] & L5["Maintainer"]
-    L1 & L2 & L3 & L4 & L5 --> CONV["Debate, then convergence<br/><b>computed</b>, not asserted:<br/>how many lenses reached<br/>this claim alone"]
-    CONV --> REF["Dedicated refuters<br/>attack the top claims"]
-    REF -->|survived| CHAIR["A neutral chair<br/>synthesizes what is left"]
-    REF -.->|refuted| DROP(["dropped"])
-```
-
-### 🏛️ etica — a book production pipeline in code
+### <img src="assets/mark-etica.svg" height="20" alt=""> etica — a book production pipeline in code
 
 Public-domain text in, print-ready book out. A headless Chromium is the typesetter: Paged.js over a stylesheet produces a 6×9 PDF with running heads and real page breaks, alongside EPUB3/Kindle and deterministic generative cover art — the same book built from one source in six languages.
 
@@ -72,7 +63,7 @@ The pipeline and a Part I sample are public; the full adapted prose is a separat
 
 ## Products & case studies
 
-### 🐱 Lucky Cat — multi-tenant restaurant SaaS
+### <img src="assets/mark-luckycat.png" height="20" alt=""> Lucky Cat — multi-tenant restaurant SaaS
 
 Two full apps on one backend: **Ownly** (owner dashboard — shifts, payroll, stock, cash-up, live orders board) and **Tillr** (customer ordering PWA with real-time tracking). Postgres **Row-Level Security** as the isolation boundary, **Stripe Connect** wired for split payments, Cloudflare at the edge.
 
@@ -80,7 +71,7 @@ First end-to-end version built solo in under two months (June–July 2026); stil
 
 → [Case study](https://github.com/augbastos/lucky-cat-case-study) · [Ownly demo](https://luckycat.ie/demo/ownly) · [Tillr demo](https://luckycat.ie/demo/tillr)
 
-### 🛩️ PitchPilot — field-sales companion with a RAG copilot
+### <img src="assets/mark-pitchpilot.png" height="20" alt=""> PitchPilot — field-sales companion with a RAG copilot
 
 A white-label app for door-to-door reps. Its core is **Wingman**, a retrieval-augmented copilot (Supabase **pgvector** + **Gemini**) that answers a rep's question from the product's own playbook — grounded and cited.
 
