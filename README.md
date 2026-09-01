@@ -33,7 +33,7 @@ I wrote the spec and **three independent verifiers — Python, Go and Rust — h
 
 Fuses network scan, WiFi CSI, camera pose and mmWave radar into one *explainable* room-occupancy state: `confidence = strength` (trust weight × the source's own confidence × freshness decay), and the dashboard always shows **why** it believes what it believes.
 
-Ships its own MCP server, so an LLM agent can ask the house what's happening. Loopback-only, camera frames never stored, CI green with every hardware path mock-tested. Runs with no hardware at all — off-localhost the frontend self-switches to a simulator.
+Ships its own MCP server, so an LLM agent can ask the house what's happening. Loopback-only by default, camera frames never stored, and every sensor path mock-tested — camera, mmWave, WiFi CSI, BLE, and the whole network-discovery stack. Runs with no hardware at all: off-localhost the frontend self-switches to a simulator.
 
 `Python 3.11 · FastAPI · AGPL-3.0` → [Repo](https://github.com/augbastos/wavr)
 
@@ -47,13 +47,13 @@ Tested end to end against a mocked Deputy API; writes stay locked behind an opt-
 
 ### ⚖️ council — a deliberation engine that distrusts its own consensus
 
-Five lenses propose independently and debate; then the pipeline *computes* convergence — which claims multiple lenses reached alone — adversarially attacks the top claims with dedicated refuters, and only lets a neutral chair synthesize from what survived.
+Four lenses on a question, five on a repo (Architect, QA, Security, Docs-DX, Maintainer), propose independently and debate; then the pipeline *computes* convergence — which claims multiple lenses reached alone — adversarially attacks the top claims with dedicated refuters, and only lets a neutral chair synthesize from what survived.
 
 Runs against any repo or question, heterogeneous models per lens, and a deterministic mock backend runs the full pipeline offline. Source private for now — happy to walk through it.
 
-### 🏛️ etica — a multi-agent book production pipeline
+### 🏛️ etica — a book production pipeline in code
 
-An agent-orchestrated pipeline that turns a public-domain source text into a typeset book — print PDF, EPUB3/Kindle, generative cover art, multi-language — with quality gates that block a stage when the previous one fails.
+Public-domain text in, print-ready book out. A headless Chromium is the typesetter: Paged.js over a stylesheet produces a 6×9 PDF with running heads and real page breaks, alongside EPUB3/Kindle and deterministic generative cover art — the same book built from one source in six languages.
 
 The pipeline and a Part I sample are public; the full adapted prose is a separate paid edition.
 
@@ -67,7 +67,7 @@ The pipeline and a Part I sample are public; the full adapted prose is a separat
 
 Two full apps on one backend: **Ownly** (owner dashboard — shifts, payroll, stock, cash-up, live orders board) and **Tillr** (customer ordering PWA with real-time tracking). Postgres **Row-Level Security** as the isolation boundary, **Stripe Connect** wired for split payments, Cloudflare at the edge.
 
-Built end to end in under two months, solo. Demo-complete and awaiting its first commercial rollout.
+First end-to-end version built solo in under two months (June–July 2026); still under active development. Two demo tenants run on the same schema a real store would get, and the card rail is proven end to end in Stripe live mode — infrastructure proven, not a customer: no restaurant has run on it.
 
 → [Case study](https://github.com/augbastos/lucky-cat-case-study) · [Ownly demo](https://luckycat.ie/demo/ownly) · [Tillr demo](https://luckycat.ie/demo/tillr)
 
@@ -99,9 +99,20 @@ It hooks git itself, so it works with **Claude Code, Codex, Cursor, local models
 
 ## Stack
 
-**Core:** Python · FastAPI · Postgres (RLS, pgvector) · Supabase · TypeScript/React · Cloudflare Workers & Pages · Docker · Stripe Connect
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat&logo=postgresql&logoColor=white)
+![pgvector](https://img.shields.io/badge/pgvector-4169E1?style=flat&logo=postgresql&logoColor=white)
+![Supabase](https://img.shields.io/badge/Supabase-3FCF8E?style=flat&logo=supabase&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)
+![React](https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=black)
+![Cloudflare](https://img.shields.io/badge/Cloudflare-F38020?style=flat&logo=cloudflare&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
+![Stripe](https://img.shields.io/badge/Stripe-635BFF?style=flat&logo=stripe&logoColor=white)
+![Claude](https://img.shields.io/badge/Claude-D97757?style=flat&logo=claude&logoColor=white)
+![Gemini](https://img.shields.io/badge/Gemini-8E75B2?style=flat&logo=googlegemini&logoColor=white)
 
-**AI:** multi-agent orchestration · MCP (Model Context Protocol) · RAG pipelines (pgvector, `sentence-transformers`) · Claude & Gemini APIs · agent hooks and CI-gated agent workflows
+**Also working with:** multi-agent orchestration · MCP (Model Context Protocol) · RAG pipelines (pgvector, `sentence-transformers`) · Postgres Row-Level Security · Supabase Edge Functions · Stripe Connect · agent hooks and CI-gated agent workflows
 
 ---
 
