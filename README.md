@@ -45,19 +45,6 @@ Tested end to end against a mocked Deputy API; writes stay locked behind an opt-
 
 `Python · FastMCP` → [Repo](https://github.com/augbastos/deputy-mcp)
 
-### ⚖️ council — a deliberation engine that distrusts its own consensus
-
-Four lenses on a question, five on a repo (Architect, QA, Security, Docs-DX, Maintainer), propose independently and debate; then the pipeline *computes* convergence — which claims multiple lenses reached alone — adversarially attacks the top claims with dedicated refuters, and only lets a neutral chair synthesize from what survived.
-
-Runs against any repo or question, heterogeneous models per lens, and a deterministic mock backend runs the full pipeline offline. Source private for now — happy to walk through it.
-
-### 🏛️ etica — a book production pipeline in code
-
-Public-domain text in, print-ready book out. A headless Chromium is the typesetter: Paged.js over a stylesheet produces a 6×9 PDF with running heads and real page breaks, alongside EPUB3/Kindle and deterministic generative cover art — the same book built from one source in six languages.
-
-The pipeline and a Part I sample are public; the full adapted prose is a separate paid edition.
-
-→ [Repo](https://github.com/augbastos/etica)
 
 ---
 
