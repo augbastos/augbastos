@@ -1,6 +1,6 @@
 # Augusto Bastos
 
-I build applied AI tooling: MCP servers, tools for AI coding agents, and local-first software you can run yourself.
+**Applied AI Engineer.** I build MCP servers, tools for AI coding agents, and local-first software you can run yourself.
 
 Limerick, Ireland · [Portfolio](https://augustobastos.pages.dev) · [LinkedIn](https://www.linkedin.com/in/augustobastos) · [CV](https://augustobastos.pages.dev/cv)
 
@@ -12,8 +12,8 @@ Limerick, Ireland · [Portfolio](https://augustobastos.pages.dev) · [LinkedIn](
 <table>
 <tr>
 <td width="50%" valign="top">
-<a href="https://github.com/augbastos/deputy-mcp"><img src="assets/projects/deputy-mcp.webp" width="100%" alt="Real MCP output from deputy-mcp against a fictional mock: tools/list returns 11 tools, tools/call deputy_who_is_working returns who is on the clock"></a>
-<br><strong><a href="https://github.com/augbastos/deputy-mcp">deputy-mcp</a></strong>
+<img src="assets/projects/deputy-mcp.webp" width="100%" alt="Real MCP output from deputy-mcp against a fictional mock: tools/list returns 11 tools, tools/call deputy_who_is_working returns who is on the clock">
+<br><strong>deputy-mcp</strong>
 <br>Self-hosted MCP server for your Deputy roster and timesheets.
 <br><sub>Python · FastMCP · OAuth 2.0</sub>
 </td>
