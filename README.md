@@ -18,8 +18,8 @@ Limerick, Ireland · [Portfolio](https://augustobastos.pages.dev) · [LinkedIn](
 
 ## Selected work
 
-<p><img src="assets/projects/deputy.svg" width="48" align="left" alt="Deputy logo">
-<strong>Deputy MCP</strong>&nbsp;
+<p><a href="https://github.com/augbastos/Deputy-MCP"><img src="assets/projects/deputy.svg" width="48" align="left" alt="Deputy logo"></a>
+<strong><a href="https://github.com/augbastos/Deputy-MCP">Deputy MCP</a></strong>&nbsp;
 <img src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white" alt="Python" align="top">
 <img src="https://img.shields.io/badge/FastMCP-1f1f1f?style=flat&logo=modelcontextprotocol&logoColor=white" alt="FastMCP" align="top">
 <img src="https://img.shields.io/badge/OAuth_2.0-555555?style=flat" alt="OAuth 2.0" align="top"><br>
