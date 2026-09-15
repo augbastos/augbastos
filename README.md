@@ -9,38 +9,32 @@ Limerick, Ireland · [Portfolio](https://augustobastos.pages.dev) · [LinkedIn](
 
 ## Selected work
 
-<table>
-<tr>
-<td width="50%" valign="top">
-<img src="assets/projects/deputy-mcp.webp" width="100%" alt="Real MCP output from deputy-mcp against a fictional mock: tools/list returns 11 tools, tools/call deputy_who_is_working returns who is on the clock">
-<br><strong>deputy-mcp</strong>
-<br>Self-hosted MCP server for your Deputy roster and timesheets.
-<br><sub>Python · FastMCP · OAuth 2.0</sub>
-</td>
-<td width="50%" valign="top">
-<a href="https://github.com/augbastos/devcard"><img src="assets/projects/devcard.webp" width="100%" alt="Four devcard renders in different layouts and themes, served by a Cloudflare Worker (snapshot, 2026-09-15)"></a>
-<br><strong><a href="https://github.com/augbastos/devcard">devcard</a></strong>
-<br>Live stats card from real AI-assisted coding output.
-<br><sub>TypeScript · Cloudflare Workers · D1</sub>
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-<a href="https://github.com/augbastos/wavr"><img src="assets/projects/wavr.webp" width="100%" alt="The Wavr dashboard in its built-in simulator: a 3D map of a home with occupied rooms lit green and a 90% confidence headline"></a>
-<br><strong><a href="https://github.com/augbastos/wavr">Wavr</a></strong>
-<br>Explainable room presence, on hardware you own.
-<br><sub>Python · FastAPI · MCP · AGPL-3.0</sub>
-</td>
-<td width="50%" valign="top">
-<a href="https://github.com/augbastos/AFKLocker"><img src="assets/projects/afklocker.webp" width="100%" alt="AFKLocker icon next to its Setup window, showing the Manual and Automatic lock modes and the global hotkey option"></a>
-<br><strong><a href="https://github.com/augbastos/AFKLocker">AFKLocker</a></strong>
-<br>Lock the PC, close the lid, keep agents running.
-<br><sub>C# · .NET Framework · Win32</sub>
-</td>
-</tr>
-</table>
+<p><img src="assets/projects/deputy.svg" width="48" align="left" alt="Deputy logo">
+<strong>deputy-mcp</strong> <sub>Python · FastMCP · OAuth 2.0</sub><br>
+Self-hosted MCP server for your Deputy roster and timesheets.
+<br clear="left"></p>
 
-**Building with** Python · TypeScript · MCP · FastAPI · PostgreSQL · Supabase · Cloudflare Workers · Docker
+<p><strong><a href="https://github.com/augbastos/devcard">devcard</a></strong> <sub>TypeScript · Cloudflare Workers · D1</sub><br>
+Live stats card from real AI-assisted coding output. It's the card above.</p>
+
+<p><a href="https://github.com/augbastos/wavr"><img src="assets/projects/wavr.svg" width="48" align="left" alt="Wavr logo"></a>
+<strong><a href="https://github.com/augbastos/wavr">Wavr</a></strong> <sub>Python · FastAPI · MCP · AGPL-3.0</sub><br>
+Explainable room presence, on hardware you own.
+<br clear="left"></p>
+
+<p><a href="https://github.com/augbastos/AFKLocker"><img src="assets/projects/afklocker.svg" width="48" align="left" alt="AFKLocker logo"></a>
+<strong><a href="https://github.com/augbastos/AFKLocker">AFKLocker</a></strong> <sub>C# · .NET Framework · Win32</sub><br>
+Lock the PC, close the lid, keep agents running.
+<br clear="left"></p>
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)
+![MCP](https://img.shields.io/badge/MCP-1f1f1f?style=flat&logo=modelcontextprotocol&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat&logo=postgresql&logoColor=white)
+![Supabase](https://img.shields.io/badge/Supabase-3FCF8E?style=flat&logo=supabase&logoColor=white)
+![Cloudflare](https://img.shields.io/badge/Cloudflare-F38020?style=flat&logo=cloudflare&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
 
 ---
 
