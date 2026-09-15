@@ -26,12 +26,6 @@ Limerick, Ireland · [Portfolio](https://augustobastos.pages.dev) · [LinkedIn](
 Self-hosted MCP server for your Deputy roster and timesheets.
 <br clear="left"></p>
 
-<p><strong><a href="https://github.com/augbastos/devcard">devcard</a></strong>&nbsp;
-<img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white" alt="TypeScript" align="top">
-<img src="https://img.shields.io/badge/Cloudflare_Workers-F38020?style=flat&logo=cloudflareworkers&logoColor=white" alt="Cloudflare Workers" align="top">
-<img src="https://img.shields.io/badge/D1-F38020?style=flat&logo=cloudflare&logoColor=white" alt="Cloudflare D1" align="top"><br>
-Live stats card from real AI-assisted coding output. It's the card above.</p>
-
 <p><a href="https://github.com/augbastos/wavr"><img src="assets/projects/wavr.svg" width="48" align="left" alt="Wavr logo"></a>
 <strong><a href="https://github.com/augbastos/wavr">Wavr</a></strong>&nbsp;
 <img src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white" alt="Python" align="top">
@@ -47,6 +41,12 @@ Explainable room presence, on hardware you own.
 <img src="https://img.shields.io/badge/Win32-0078D4?style=flat" alt="Win32" align="top"><br>
 Lock the PC, close the lid, keep agents running.
 <br clear="left"></p>
+
+<p><strong><a href="https://github.com/augbastos/devcard">devcard</a></strong>&nbsp;
+<img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white" alt="TypeScript" align="top">
+<img src="https://img.shields.io/badge/Cloudflare_Workers-F38020?style=flat&logo=cloudflareworkers&logoColor=white" alt="Cloudflare Workers" align="top">
+<img src="https://img.shields.io/badge/D1-F38020?style=flat&logo=cloudflare&logoColor=white" alt="Cloudflare D1" align="top"><br>
+Live stats card from real AI-assisted coding output. It's the card above.</p>
 
 ---
 
