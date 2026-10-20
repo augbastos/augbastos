@@ -13,7 +13,9 @@
 
 Limerick, Ireland · [Portfolio](https://augustobastos.pages.dev) · [LinkedIn](https://www.linkedin.com/in/augustobastos) · [CV](https://augustobastos.pages.dev/cv) · [hello@luckycat.ie](mailto:hello@luckycat.ie)
 
+<!-- devcard:start -->
 <a href="https://github.com/augbastos/devcard"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/augbastos/devcard/devcard-data/card-dark.svg"><img src="https://raw.githubusercontent.com/augbastos/devcard/devcard-data/card.svg" width="100%" alt="devcard: stats from my own AI-assisted coding, updated from local hooks"></picture></a>
+<!-- devcard:end -->
 <p align="center"><sub>From my own coding hooks, refreshed every ~15 min: lines my agents and I write, rewrites included · powered by <a href="https://github.com/augbastos/devcard">devcard</a></sub></p>
 
 ## Selected work
@@ -43,10 +45,9 @@ Lock the PC, close the lid, keep agents running.
 <br clear="left"></p>
 
 <p><strong><a href="https://github.com/augbastos/devcard">devcard</a></strong>&nbsp;
-<img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white" alt="TypeScript" align="top">
-<img src="https://img.shields.io/badge/Cloudflare_Workers-F38020?style=flat&logo=cloudflareworkers&logoColor=white" alt="Cloudflare Workers" align="top">
-<img src="https://img.shields.io/badge/D1-F38020?style=flat&logo=cloudflare&logoColor=white" alt="Cloudflare D1" align="top"><br>
-Live stats card from real AI-assisted coding output. It's the card above.</p>
+<img src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white" alt="Python" align="top">
+<img src="https://img.shields.io/badge/SVG-FFB13B?style=flat&logo=svg&logoColor=black" alt="SVG" align="top"><br>
+Stats card built from my own AI-assisted coding, rendered on my machine and published to this profile. It's the card above.</p>
 
 ---
 
