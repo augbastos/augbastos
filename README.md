@@ -14,7 +14,7 @@
 Limerick, Ireland · [Portfolio](https://augustobastos.pages.dev) · [LinkedIn](https://www.linkedin.com/in/augustobastos) · [CV](https://augustobastos.pages.dev/cv) · [hello@luckycat.ie](mailto:hello@luckycat.ie)
 
 <!-- devcard:start -->
-<a href="https://github.com/augbastos/devcard"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/augbastos/devcard/devcard-data/card-dark.svg"><img src="https://raw.githubusercontent.com/augbastos/devcard/devcard-data/card.svg" width="100%" alt="devcard: stats from my own AI-assisted coding, updated from local hooks"></picture></a>
+<a href="https://github.com/augbastos/devcard"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/augbastos/augbastos/devcard-data/card-dark.svg"><img src="https://raw.githubusercontent.com/augbastos/augbastos/devcard-data/card.svg" width="100%" alt="devcard: stats from my own AI-assisted coding, updated from local hooks"></picture></a>
 <!-- devcard:end -->
 <p align="center"><sub>From my own coding hooks, refreshed every ~15 min: lines my agents and I write, rewrites included · powered by <a href="https://github.com/augbastos/devcard">devcard</a></sub></p>
 
