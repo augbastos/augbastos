@@ -2,7 +2,7 @@
 
 **Applied AI Developer · Agentic AI · MCP · RAG**
 
-I design and ship AI systems by directing coding agents (Claude Code, Codex): I set the architecture and the guardrails, a second AI agent reviews the code, and I test the result. Preparing for GitHub Certified: Agentic AI Developer (GH-600, exam booked Nov 2026).
+I design and ship AI systems by directing coding agents (Claude Code, Codex): I set the architecture and the guardrails, a second AI agent reviews the code, and I test the result.
 
 ![MCP](https://img.shields.io/badge/MCP-1f1f1f?style=flat&logo=modelcontextprotocol&logoColor=white)
 ![RAG](https://img.shields.io/badge/RAG-pgvector-4169E1?style=flat)
@@ -20,32 +20,36 @@ Limerick, Ireland · [Portfolio](https://augbastos.pages.dev) · [LinkedIn](http
 
 ## Selected work
 
+<p><a href="https://luckycat.ie"><img src="assets/projects/luckycat.png" width="48" align="left" alt="Lucky Cat logo"></a>
+<strong><a href="https://luckycat.ie">Lucky Cat</a></strong> · <a href="https://github.com/augbastos/lucky-cat-case-study">case study</a>&nbsp;
+<img src="https://img.shields.io/badge/Supabase-3FCF8E?style=flat&logo=supabase&logoColor=white" alt="Supabase" align="top">
+<img src="https://img.shields.io/badge/PostgreSQL_RLS-4169E1?style=flat&logo=postgresql&logoColor=white" alt="PostgreSQL Row-Level Security" align="top">
+<img src="https://img.shields.io/badge/Stripe_Connect-635BFF?style=flat&logo=stripe&logoColor=white" alt="Stripe Connect" align="top"><br>
+Multi-tenant restaurant platform, tenant data isolated by Row-Level Security. Pre-launch.
+<br clear="left"></p>
+
 <p><a href="https://github.com/augbastos/Deputy-MCP"><img src="assets/projects/deputy.svg" width="48" align="left" alt="Deputy logo"></a>
 <strong><a href="https://github.com/augbastos/Deputy-MCP">Deputy MCP</a></strong>&nbsp;
 <img src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white" alt="Python" align="top">
 <img src="https://img.shields.io/badge/FastMCP-1f1f1f?style=flat&logo=modelcontextprotocol&logoColor=white" alt="FastMCP" align="top">
 <img src="https://img.shields.io/badge/OAuth_2.0-555555?style=flat" alt="OAuth 2.0" align="top"><br>
-Self-hosted MCP server for your Deputy roster and timesheets.
+Self-hosted MCP server for your Deputy roster and timesheets. Read-only by default.
 <br clear="left"></p>
 
-<p><strong><a href="https://github.com/augbastos/pitchpilot-case-study">PitchPilot</a></strong>&nbsp;
+<p><a href="https://github.com/augbastos/pitchpilot-case-study"><img src="assets/projects/pitchpilot.svg" width="48" align="left" alt="PitchPilot logo"></a>
+<strong><a href="https://github.com/augbastos/pitchpilot-case-study">PitchPilot</a></strong>&nbsp;
 <img src="https://img.shields.io/badge/RAG-pgvector-4169E1?style=flat" alt="RAG with pgvector" align="top">
 <img src="https://img.shields.io/badge/Supabase-3FCF8E?style=flat&logo=supabase&logoColor=white" alt="Supabase" align="top">
 <img src="https://img.shields.io/badge/Gemini-8E75B2?style=flat&logo=googlegemini&logoColor=white" alt="Gemini" align="top"><br>
-Case study: a field-sales copilot that answers from each product's own documents. Pre-launch.</p>
-
-<p><a href="https://github.com/augbastos/AFKLocker"><img src="assets/projects/afklocker.svg" width="48" align="left" alt="AFKLocker logo"></a>
-<strong><a href="https://github.com/augbastos/AFKLocker">AFKLocker</a></strong>&nbsp;
-<img src="https://img.shields.io/badge/C%23-512BD4?style=flat" alt="C#" align="top">
-<img src="https://img.shields.io/badge/.NET_Framework-512BD4?style=flat&logo=dotnet&logoColor=white" alt=".NET Framework" align="top">
-<img src="https://img.shields.io/badge/Win32-0078D4?style=flat" alt="Win32" align="top"><br>
-Lock the PC, close the lid, keep agents running.
+Case study: a field-sales copilot that answers from each product's own documents. Pre-launch.
 <br clear="left"></p>
 
-<p><strong><a href="https://github.com/augbastos/devcard">devcard</a></strong>&nbsp;
-<img src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white" alt="Python" align="top">
-<img src="https://img.shields.io/badge/SVG-FFB13B?style=flat&logo=svg&logoColor=black" alt="SVG" align="top"><br>
-Stats card built from my own AI-assisted coding, rendered on my machine and published to this profile. It's the card above.</p>
+<p><a href="https://github.com/augbastos/dictate-cli"><img src="assets/projects/dictatecli.svg" width="48" align="left" alt="DictateCLI logo"></a>
+<strong><a href="https://github.com/augbastos/dictate-cli">DictateCLI</a></strong>&nbsp;
+<img src="https://img.shields.io/badge/Claude_Code-D97757?style=flat&logo=claude&logoColor=white" alt="Claude Code" align="top">
+<img src="https://img.shields.io/badge/Windows-0078D4?style=flat" alt="Windows" align="top"><br>
+A microphone button for Claude Code's native voice dictation on Windows.
+<br clear="left"></p>
 
 ---
 

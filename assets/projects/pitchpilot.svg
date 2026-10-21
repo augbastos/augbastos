@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-label="pitchpilot">
+  <!-- App icon. Corner radius 21.2% of the side, measured off icon.png - the
+       same squircle family as ownly's 21.9%, and close enough that they read as
+       siblings in a launcher without being a shared component.
+
+       The corners here are TRANSPARENT. icon.png filled them white, which is
+       invisible on a white page and a white halo on every dark one: a launcher,
+       a dark browser tab, a dark README. That is the one defect the raster had
+       that a redraw could not leave in place. -->
+  <rect width="512" height="512" rx="108.5" ry="108.5" fill="#111F0C"/>
+  <g transform="translate(128 160.3) scale(2.195)">
+    <path fill="#3DB54A" fill-rule="evenodd" d="M0 0 L116.64 50 L0 100 Z
+           M0 38.93 L83.05 50 L0 61.22 Z"/>
+  </g>
+</svg>
