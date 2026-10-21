@@ -49,4 +49,4 @@ Stats card built from my own AI-assisted coding, rendered on my machine and publ
 
 ---
 
-Open to **junior Applied AI** roles in Ireland or remote · [Portfolio & CV](https://augbastos.pages.dev) · [LinkedIn](https://www.linkedin.com/in/augustobastos)
+Open to **AI** roles in Ireland or remote · [Portfolio & CV](https://augbastos.pages.dev) · [LinkedIn](https://www.linkedin.com/in/augustobastos)
