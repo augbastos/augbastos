@@ -2,8 +2,6 @@
 
 **Applied AI Developer · Agentic AI · MCP · RAG**
 
-I design and ship AI systems by directing coding agents (Claude Code, Codex): I set the architecture and the guardrails, a second AI agent reviews the code, and I test the result.
-
 ![MCP](https://img.shields.io/badge/MCP-1f1f1f?style=flat&logo=modelcontextprotocol&logoColor=white)
 ![RAG](https://img.shields.io/badge/RAG-pgvector-4169E1?style=flat)
 ![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=flat&logo=claude&logoColor=white)
