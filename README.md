@@ -1,6 +1,6 @@
-<a href="https://learn.microsoft.com/api/credentials/share/en-us/AugustoBastos-9158/2187E65BC9EF2424?sharingId=EE2F8F5622D3C83E"><img src="https://learn.microsoft.com/en-us/credentials/images/badges/github-agentic-ai-developer.svg" width="120" align="right" alt="GitHub Certified: Agentic AI Developer (GH-600) badge" title="GitHub Certified: Agentic AI Developer (GH-600)"></a>
-
 # Augusto Bastos
+
+<a href="https://learn.microsoft.com/api/credentials/share/en-us/AugustoBastos-9158/2187E65BC9EF2424?sharingId=EE2F8F5622D3C83E"><img src="https://learn.microsoft.com/en-us/credentials/images/badges/github-agentic-ai-developer.svg" width="96" align="right" alt="GitHub Certified: Agentic AI Developer (GH-600) badge" title="GitHub Certified: Agentic AI Developer (GH-600)"></a>
 
 **Applied AI Developer · Agentic AI · MCP · RAG**
 
