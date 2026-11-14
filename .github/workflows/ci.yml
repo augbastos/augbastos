@@ -83,5 +83,5 @@ jobs:
         run: |
           jq -e --arg event "$EVENT_NAME" '
             to_entries | all(.value.result == "success" or
-              (.key == "safety" and .value.result == "skipped" and $event != "pull_request"))
+              (.key == "safety" and .value.result == "skipped" and $event == "push"))
           ' <<< "$NEEDS_JSON"
